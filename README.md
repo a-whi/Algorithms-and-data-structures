@@ -63,25 +63,25 @@ Assignment 2:
  - Part 2:
   For this part of the assignment I a path from two points that would return the highest score. The input was an directed acyclic graph so I had to use topological sort on the nodes to order them from highest to lowest. After that I found the the best path using the critcal path algorithm. This had to be done in a time complexity of O(D+P) & aux space complexity of O(D).
   
-  O(D): number of downhill segments
-  O(P): the number of intersection points
+   O(D): number of downhill segments
+   O(P): the number of intersection points
   
-  Input:
-   - downhillScores: A list of tuples containing: the start point of the downhill segment, the end point of the downhill segment and the score that can be achieved by going down it.
-   - start: The point which we are starting at 
-   - finish: The end point
-  
-  Output:
-   - The route from start to finish that will result in the most points 
-   
-   An example:
-   
    Input:
-   downhillScores = [(0, 6, -500), (1, 4, 100), (1, 2, 300),
+    - downhillScores: A list of tuples containing: the start point of the downhill segment, the end point of the downhill segment and the score that can be achieved by going down it.
+    - start: The point which we are starting at 
+    - finish: The end point
+  
+   Output:
+    - The route from start to finish that will result in the most points 
+   
+    An example:
+   
+    Input:
+    downhillScores = [(0, 6, -500), (1, 4, 100), (1, 2, 300),
 (6, 3, -100), (6, 1, 200), (3, 4, 400), (3, 1, 400),
 (5, 6, 700), (5, 1, 1000), (4, 2, 100)]
-   start = 6
-   finish = 2
+    start = 6
+    finish = 2
    
-   Output:
-   [6, 3, 1, 2]
+    Output:
+    [6, 3, 1, 2]
