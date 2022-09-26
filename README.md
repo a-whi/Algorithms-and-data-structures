@@ -52,12 +52,12 @@ Assignment 2:
    roads = [(0, 1, 4), (1, 2, 2), (2, 3, 3), (3, 4, 1), (1, 5, 2),
 (5, 6, 5), (6, 3, 2), (6, 4, 3), (1, 7, 4), (7, 8, 2),
 (8, 7, 2), (7, 3, 2), (8, 0, 11), (4, 3, 1), (4, 8, 10)]
-  cafes = [(5, 10), (6, 1), (7, 5), (0, 3), (8, 4)]
+    cafes = [(5, 10), (6, 1), (7, 5), (0, 3), (8, 4)]
  
-  mygraph.routing(start, end) (1 & 3 for this example)
+    mygraph.routing(start, end) (1 & 3 for this example)
   
-   Output:
-   [1, 5, 6, 3]
+    Output:
+    [1, 5, 6, 3]
   
   
  - Part 2:
