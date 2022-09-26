@@ -34,30 +34,30 @@ Assignment 2:
   O(V): the set of unique locations in roads
   O(E): the set roads
   
-  To do this I used Dijkstra's algorithm first finding the shortest path from the start to a coffee shop then again from the end point to the same coffee shop. Then combined the two paths.
+   To do this I used Dijkstra's algorithm first finding the shortest path from the start to a coffee shop then again from the end point to the same coffee shop. Then combined the two paths.
   Input:
-   - start: The starting location on the graph
-   - end: The location we are trying to get to
-   - roads: A list of roads represented as a list of tuples (u, v, w). 'u' is the starting point, 'v' is the end point and 'w' is the time taken to travel from location u to location v
-   - cafes: A list of coffee locations represented as a list of tuples (location, waiting_time)
+    - start: The starting location on the graph
+    - end: The location we are trying to get to
+    - roads: A list of roads represented as a list of tuples (u, v, w). 'u' is the starting point, 'v' is the end point and 'w' is the time taken to travel from location u to location v
+    - cafes: A list of coffee locations represented as a list of tuples (location, waiting_time)
 
-  Output:
-   - The shortest route in the form of a list of integers going from the start point to the end by passing a cafe to get a coffee.
-   - If no such route exists from the start location to one of the cafes and proceeding next to the end location is possible, then the function will return None.
+   Output:
+    - The shortest route in the form of a list of integers going from the start point to the end by passing a cafe to get a coffee.
+    - If no such route exists from the start location to one of the cafes and proceeding next to the end location is possible, then the function will return None.
   
-  An example:
+   An example:
   
-  Inputs:
+   Inputs:
   
-  roads = [(0, 1, 4), (1, 2, 2), (2, 3, 3), (3, 4, 1), (1, 5, 2),
+   roads = [(0, 1, 4), (1, 2, 2), (2, 3, 3), (3, 4, 1), (1, 5, 2),
 (5, 6, 5), (6, 3, 2), (6, 4, 3), (1, 7, 4), (7, 8, 2),
 (8, 7, 2), (7, 3, 2), (8, 0, 11), (4, 3, 1), (4, 8, 10)]
- cafes = [(5, 10), (6, 1), (7, 5), (0, 3), (8, 4)]
+  cafes = [(5, 10), (6, 1), (7, 5), (0, 3), (8, 4)]
  
- mygraph.routing(start, end) (1 & 3 for this example)
+  mygraph.routing(start, end) (1 & 3 for this example)
   
-  Output:
-  [1, 5, 6, 3]
+   Output:
+   [1, 5, 6, 3]
   
   
  - Part 2:
