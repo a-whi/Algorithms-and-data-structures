@@ -108,10 +108,10 @@ Assignment 3:
    - None: Will be returned if an allocation that satisfy all constraints does not exist
    
    An example:
-   • 0, if that person has neither time availability to prepare the breakfast nor the dinner during that day.
-   • 1, if that person only has time availability to prepare the breakfast during that day.
-   • 2, if that person only has time availability to prepare the dinner during that day.
-   • 3, if that person has time availability to prepare either the breakfast or the dinner during that day.
+   - 0, if that person has neither time availability to prepare the breakfast nor the dinner during that day.
+   - 1, if that person only has time availability to prepare the breakfast during that day.
+   - 2, if that person only has time availability to prepare the dinner during that day.
+   - 3, if that person has time availability to prepare either the breakfast or the dinner during that day.
    
    Inputs:
    availability = [[2, 0, 2, 1, 2], [3, 3, 1, 0, 0],
